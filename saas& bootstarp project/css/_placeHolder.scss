@@ -1,0 +1,29 @@
+%after {
+  content: " ";
+  width: 60px;
+  height: 3px;
+  color: $pinkColor;
+  position: absolute;
+  background-color: $pinkColor;
+  top: 60%;
+  left: 48%;
+  margin: 10px 0;
+}
+
+%textP {
+  font-family: $primaryFont;
+  font-size: 18px;
+}
+%textH3 {
+  font-family: $secondaryFont;
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+%absoluteSpan {
+  background-color: $fourthColor;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  top: 29%;
+  left: 0%;
+}

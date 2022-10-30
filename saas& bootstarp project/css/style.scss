@@ -1,0 +1,389 @@
+@import "./variables.scss";
+@import "./placeHolder";
+
+main {
+  background-image: url(../pics/bg-header.jpg);
+  background-size: cover;
+
+  .overlay {
+    background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .content {
+    z-index: 99;
+  }
+  .carousel.slide {
+    width: 100%;
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 40%;
+    position: relative;
+
+    .carousel-indicators .active {
+      position: relative;
+
+      &:hover {
+        @extend %after;
+      }
+    }
+  }
+  .creative {
+    font-family: $primaryFont;
+    font-size: 3rem;
+  }
+  .mongoMain {
+    font-family: $secondaryFont;
+    font-size: 6rem;
+    font-weight: 800;
+  }
+}
+
+.storyAboutUs {
+  .weDo {
+    font-family: $primaryFont;
+  }
+  .story {
+    font-family: $secondaryFont;
+    position: relative;
+  }
+
+  .story::after {
+    @extend %after;
+  }
+  .lorem {
+    font-family: $thirdFont;
+    color: $secondaryColor;
+    font-size: 0.8rem;
+  }
+  .doubleImg {
+    position: relative;
+  }
+  .doubleImg .card {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+    transition: 0.5s;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .doubleImg {
+    &:hover .card {
+      display: block;
+      top: 0;
+      opacity: 0.8;
+      transform: translate(-10px, -10px);
+    }
+    &:hover img {
+      border-bottom: 10px solid $thirdColor;
+      border-right: 10px solid $thirdColor;
+    }
+  }
+
+  .content {
+    padding-top: 25%;
+  }
+}
+.designProject {
+  background-color: $fourthColor;
+}
+
+.col p {
+  font-family: $secondaryFont;
+}
+
+.col p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 800;
+}
+.col p:nth-child(2) {
+  font-size: 12px;
+}
+
+/************************/
+.amazingH,
+.uniqueDesignText h3,
+.serviceSection h3 {
+  position: relative;
+
+  &::after {
+    @extend %after;
+    top: 100%;
+  }
+}
+.headsectionText p,
+.amazingService p,
+.uniqueDesignText p,
+.serviceSection .serviceP {
+  @extend %textP;
+}
+.amazingService h3,
+.uniqueDesignText h3,
+.serviceSection h3 {
+  @extend %textH3;
+}
+.content-text h5 {
+  font-family: $secondaryFont;
+  font-size: 16px;
+}
+.content-text p {
+  font-family: $thirdFont;
+  color: $secondaryColor;
+  font-size: 14px;
+}
+
+/********************/
+.navbar-collapse {
+  flex-grow: 0;
+}
+nav {
+  z-index: 1;
+}
+
+/**********************/
+//unique design
+.uniqueDesign {
+  background-image: url(../pics/unique-design/bg-unique-design.jpg);
+}
+.mobilePic {
+  height: 50%;
+  margin-left: -3.5rem;
+  margin-top: 14%;
+}
+.serviceParagraph {
+  font-family: $thirdFont;
+  color: $secondaryColor;
+  font-size: 0.8rem;
+}
+/*************************/
+.analysisPeople {
+  font-family: $thirdFont;
+  color: $secondaryColor;
+  line-height: 33px;
+  margin-right: 3rem;
+}
+
+.nameP {
+  font-family: $primaryFont;
+}
+.nameP::before {
+  @extend %after;
+  left: 25%;
+  width: 2.5rem;
+  top: 62%;
+}
+
+.meetTeam {
+  position: relative;
+}
+.meetTeam .card {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+  transition: 0.5s;
+  text-align: center;
+  width: 100%;
+  display: none;
+  height: 85%;
+}
+.meetTeam {
+  &:hover .card {
+    display: block;
+    top: 0;
+    opacity: 0.8;
+    transform: translate(-10px, -10px);
+  }
+  &:hover img {
+    border-bottom: 10px solid $thirdColor;
+    border-right: 10px solid $thirdColor;
+  }
+}
+
+.socialMedia {
+  width: 55.3%;
+  margin: 50% auto;
+}
+.social h5 {
+  font-family: $secondaryFont;
+}
+.social p {
+  font-family: $thirdFont;
+  color: $secondaryColor;
+}
+/************************/
+.otherPeople button {
+  color: $secondaryColor;
+}
+
+//happy client
+.happyClients {
+  background-image: url(../pics/happy-client/bg-happy-client.jpg);
+}
+
+/*****************/
+//some work section
+.someWorkCountainer h3 {
+  font-family: $secondaryFont;
+}
+.someWorkCountainer .name {
+  font-family: $thirdFont;
+  position: relative;
+  &::after {
+    @extend %after;
+    top: 100%;
+    left: 0%;
+  }
+}
+
+.someWorkParagraph {
+  color: $secondaryColor;
+}
+
+.someWork {
+  position: relative;
+}
+.someWork .card {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+  transition: 0.5s;
+  text-align: center;
+  width: 100%;
+  display: none;
+  height: 51%;
+}
+.someWork {
+  &:hover .card {
+    display: block;
+    top: 0;
+    opacity: 0.8;
+    // transform: translate(-10px, -10px);
+  }
+}
+
+.someWorkk {
+  position: relative;
+}
+.someWorkk .cardd {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+  transition: 0.5s;
+  text-align: center;
+  width: 100%;
+  display: none;
+  height: 100%;
+}
+.someWorkk {
+  &:hover .cardd {
+    display: block;
+    top: 0;
+    opacity: 0.8;
+    // transform: translate(-10px, -10px);
+  }
+}
+.someWorkkk {
+  position: relative;
+}
+.someWorkkk .carddd {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(0deg, #e2cc7b 0%, #db7474 100%);
+  transition: 0.5s;
+  text-align: center;
+  width: 100%;
+  display: none;
+  height: 100%;
+}
+.someWorkkk {
+  &:hover .carddd {
+    display: block;
+    top: 0;
+    opacity: 0.8;
+  }
+}
+
+/*********/
+//latest blog
+.viewMsg h5 {
+  font-family: $secondaryFont;
+  font-size: 16px;
+}
+.viewMsg p {
+  font-family: $thirdFont;
+  color: $secondaryColor;
+  font-size: 14px;
+}
+.viewMsg i {
+  color: $fourthColor;
+}
+.viewMsg span {
+  color: $secondaryColor;
+  font-size: 13px;
+}
+.viewMsg img {
+  position: relative;
+}
+.absoluteSpan {
+  @extend %absoluteSpan;
+}
+.absoluteSpan span {
+  font-size: 27px;
+  color: white;
+  font-weight: 800;
+  display: block;
+}
+
+/*****************/
+//map section
+.mapSection {
+  background-image: url(../pics/map/bg-map.jpg);
+  color: $pinkColor;
+}
+/***************/
+//footer section
+.followIcons i {
+  color: $fourthColor;
+  margin-right: 0.4rem;
+}
+.followIcons button {
+  background-color: $fourthColor;
+}
+.followIcons .megoP,
+h2 {
+  color: $secondaryColor;
+  opacity: 0.7;
+}
+
+.followIcons .megoP,
+.followUs,
+.input,
+.viewMore {
+  font-family: $thirdFont;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: $secondaryColor;
+}
+.followIcons h4,
+footer {
+  font-family: $secondaryFont;
+}
+.instargram img {
+  margin-bottom: 4px;
+}
+
+/**********/
+//footer
+footer span {
+  color: $pinkColor;
+}

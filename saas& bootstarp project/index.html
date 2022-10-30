@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sass & bootstrap project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Epilogue:wght@500;700&family=Kaushan+Script&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Epilogue:wght@500;700&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Epilogue:wght@500;700&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="row">
+        <div>
+          <nav
+            class="navbar navbar-expand-lg bg-light position-fixed w-100 bg-transparent"
+          >
+            <div class="container">
+              <a class="navbar-brand text-white" href="#">MoGo</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse ms-auto"
+                id="navbarNavDropdown"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <main
+      id="main"
+      class="vh-100 position-relative d-flex align-items-center mb-5 justify-content-center"
+    >
+      <div class="overlay position-absolute opacity-75 vh-100"></div>
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active vh-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="creative">creative template</h3>
+              <h1 class="mongoMain">welcome to mongo</h1>
+              <button
+                class="border border-2 border-light px-3 text-white bg-transparent"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item vh-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="creative">creative template</h3>
+              <h1 class="mongoMain">welcome to mongo</h1>
+              <button
+                class="border border-2 border-light px-3 text-white bg-transparent"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item vh-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="creative">creative template</h3>
+              <h1 class="mongoMain">welcome to mongo</h1>
+              <button
+                class="border border-2 border-light px-3 text-white bg-transparent"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item vh-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="creative">creative template</h3>
+              <h1 class="mongoMain">welcome to mongo</h1>
+              <button
+                class="border border-2 border-light px-3 text-white bg-transparent"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="mb-5">
+      <div class="storyAboutUs container text-center">
+        <div>
+          <p class="weDo">What we do</p>
+          <h2 class="story fw-bold pb-5 text-black">Story about us</h2>
+          <div>
+            <p class="lorem mx-5 mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-1">
+            <div class="doubleImg">
+              <img class="w-100" src="pics/img-1.jpg" />
+              <div class="card">
+                <p class="content">SUPER TEAM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-1">
+            <div class="doubleImg">
+              <img class="w-100" src="pics/img-2.jpg" />
+              <div class="card">
+                <p class="content">SUPER TEAM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-1">
+            <div class="doubleImg">
+              <img class="w-100" src="pics/img-3.jpg" />
+              <div class="card">
+                <p class="content">SUPER TEAM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-100 text-center text-white mb-5 designProject">
+      <div class="container">
+        <div class="row">
+          <div class="col border-end border-white py-2">
+            <p>42</p>
+            <p>design project</p>
+          </div>
+
+          <div class="col border-end border-white">
+            <p>123</p>
+            <p>design project</p>
+          </div>
+
+          <div class="col border-end border-white">
+            <p>15</p>
+            <p>design project</p>
+          </div>
+
+          <div class="col border-end border-white">
+            <p>99</p>
+            <p>design project</p>
+          </div>
+
+          <div class="col">
+            <p>24</p>
+            <p>design project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container workWith">
+        <div class="row mb-4">
+          <div class="text-center amazingService">
+            <p>We work with</p>
+            <h3 class="mb-5 amazingH">Amazing Services</h3>
+          </div>
+
+          <div class="row content-text">
+            <div class="row border-bottom border-text-muted">
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/1.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/2.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/3.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/4.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/5.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex mb-4">
+                <div>
+                  <img class="me-3" src="pics/6.png" />
+                </div>
+
+                <div>
+                  <h5>Photography</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 mb-5">
+      <div class="uniqueDesign pt-5 position-relative">
+        <div class="text-center mb-5 uniqueDesignText">
+          <p>for all devices</p>
+          <h3>Unique Design</h3>
+        </div>
+        <div class="text-center">
+          <img class="w-25 mt-5" src="pics/unique-design/img-1.png" alt="" />
+          <img
+            class="position-absolute mobilePic"
+            src="pics/unique-design/img-2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="serviceSection container text-center mb-5">
+        <div>
+          <p class="serviceP">Service</p>
+          <h3>What we do</h3>
+          <div>
+            <p class="serviceParagraph mx-5 mb-5 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center container row gap-4">
+          <div class="col">
+            <img src="pics/what-we-do/img-1.jpg " alt="" />
+          </div>
+          <div class="col">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button gap-2 bg-white text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <img src="pics/what-we-do/1.png" alt="" />
+                    Photography
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis aliquam accusantium quae nihil quo, adipisci enim
+                    ipsa. Eius nihil dignissimos ea cum consectetur dicta quo,
+                    omnis, quibusdam alias dolorum deleniti? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Nesciunt accusantium
+                    architecto distinctio cupiditate, natus ab eaque quasi amet
+                    sunt hic blanditiis quos vel laboriosam at iure nihil. Vero,
+                    fugiat quia
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed gap-2 bg-white text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <img src="pics/what-we-do/2.png" alt="" />
+                    creativity
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt accusantium architecto distinctio cupiditate, natus
+                    ab eaque quasi amet sunt hic blanditiis quos vel laboriosam
+                    at iure nihil. Vero, fugiat quia. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt accusantium
+                    architecto distinctio cupiditate, natus ab eaque quasi amet
+                    sunt hic blanditiis quos vel laboriosam at iure nihil. Vero,
+                    fugiat quia
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed gap-2 bg-white text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <img src="pics/what-we-do/3.png" alt="" />
+                    web design
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo at corporis esse officia debitis rem magni est quae
+                    temporibus. Perferendis neque corrupti dolor aliquam placeat
+                    sequi consequuntur soluta voluptates voluptatum. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Nesciunt
+                    accusantium architecto distinctio cupiditate, natus ab eaque
+                    quasi amet sunt hic blanditiis quos vel laboriosam at iure
+                    nihil. Vero, fugiat quia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark bg-opacity-10 py-5 mb-5">
+      <div>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade container px-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active d-flex gap-4 ms-5 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/testimonial/1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Consequuntur, fuga quibusdam. Fugiat assumenda fugit nostrum,
+                  distinctio quam, illum aspernatur esse dolor repudiandae
+                  dolorum quibusdam minus illo ut repellendus rerum mollitia!
+                </p>
+                <p class="nameP ms-5">Someone Name</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/testimonial/img-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ipsa sunt ratione reiciendis perferendis vel
+                  suscipit recusandae aperiam cumque beatae, non, quod
+                  laudantium cupiditate iste asperiores voluptatem! Porro,
+                  voluptas deleniti?
+                </p>
+                <p class="nameP ms-5">Nalla Dohn</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/testimonial/img-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, totam quisquam! Commodi, quaerat. In, unde
+                  laudantium. Placeat, consequuntur praesentium ex alias
+                  repellat animi rerum. Sed, nemo. Quo dolor minus minima. Sed,
+                  nemo. Quo dolor minus minima.
+                </p>
+                <p class="nameP ms-5">Jone doe</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/testimonial/img-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  quasi, eius quod nisi nobis tempora vitae dolorem assumenda
+                  temporibus hic quae, ipsa harum iste voluptatibus mollitia
+                  dolores placeat ab rem? Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="nameP ms-5">Emilly Joe</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="serviceSection container text-center mb-5">
+        <div>
+          <p class="serviceP mb-0">Who we are</p>
+          <h3>MEET OUR TEAM</h3>
+          <div>
+            <p class="serviceParagraph mx-5 mb-5 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="meetTeam">
+            <img class="w-100 mb-4" src="pics/our-team/img-1.jpg" />
+            <div class="card">
+              <p class="content bg-warning bg-opacity-75 socialMedia">
+                <i class="fab fa-facebook-f text-white bg-danger p-3"></i>
+                <i
+                  class="fab fa-twitter text-danger p-3 border-end border-danger"
+                ></i>
+                <i
+                  class="fab fa-pinterest-p text-danger p-3 border-end border-danger"
+                ></i>
+                <i class="fab fa-instagram text-danger p-3"></i>
+              </p>
+            </div>
+            <div class="social text-center">
+              <h5 class="content fs-5">Matthew Dix</h5>
+              <p class="fs-6">Graphic Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="meetTeam">
+            <img class="w-100 mb-4" src="pics/our-team/img-2.jpg" />
+            <div class="card">
+              <p class="content bg-warning bg-opacity-75 socialMedia">
+                <i class="fab fa-facebook-f text-white bg-danger p-3"></i>
+                <i
+                  class="fab fa-twitter text-danger p-3 border-end border-danger"
+                ></i>
+                <i
+                  class="fab fa-pinterest-p text-danger p-3 border-end border-danger"
+                ></i>
+                <i class="fab fa-instagram text-danger p-3"></i>
+              </p>
+            </div>
+            <div class="social text-center">
+              <h5 class="content fs-5">Christopher Campbell</h5>
+              <p class="fs-6">Branding/UX design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="meetTeam">
+            <img class="w-100 mb-4" src="pics/our-team/img-3.jpg" />
+            <div class="card">
+              <p class="content bg-warning bg-opacity-75 socialMedia">
+                <i class="fab fa-facebook-f text-white bg-danger p-3"></i>
+                <i
+                  class="fab fa-twitter text-danger p-3 border-end border-danger"
+                ></i>
+                <i
+                  class="fab fa-pinterest-p text-danger p-3 border-end border-danger"
+                ></i>
+                <i class="fab fa-instagram text-danger p-3"></i>
+              </p>
+            </div>
+            <div class="social text-center">
+              <h5 class="content fs-5">Michael Fertig</h5>
+              <p class="fs-6">Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark bg-opacity-10 text-center my-5 py-4">
+      <div>
+        <img src="pics/brand/img-1.png" alt="" />
+        <img src="pics/brand/img-2.png" alt="" />
+        <img src="pics/brand/img-3.png" alt="" />
+        <img src="pics/brand/img-4.png" alt="" />
+        <img src="pics/brand/img-5.png" alt="" />
+        <img src="pics/brand/img-6.png" alt="" />
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <div class="serviceSection container text-center mb-5">
+          <p class="serviceP fs-5">What we do</p>
+          <h3>some of our work</h3>
+          <div>
+            <p class="serviceParagraph mx-5 mb-5 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex mb-5">
+          <div class="w-25 someWork">
+            <div>
+              <img
+                class="d-block w-100"
+                src="pics/our-work/img-1.jpg "
+                alt=""
+              />
+
+              <div class="card">
+                <section class="content text-center">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+            <div class="someWorkk">
+              <img
+                class="d-block w-100"
+                src="pics/our-work/img-2.jpg "
+                alt=""
+              />
+              <div class="cardd">
+                <section class="content">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-25 someWork">
+            <div>
+              <img
+                class="d-block w-100"
+                src="pics/our-work/img-4.jpg "
+                alt=""
+              />
+
+              <div class="card">
+                <section class="content text-center">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+            <div class="someWorkk">
+              <img
+                class="d-block w-100"
+                src="pics/our-work/img-5.jpg "
+                alt=""
+              />
+              <div class="cardd">
+                <section class="content">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-25 someWorkkk">
+            <div>
+              <img class="d-block w-100" src="pics/our-work/img-3.jpg" alt="" />
+
+              <div class="carddd">
+                <section class="content text-center">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-25 someWork">
+            <div>
+              <img class="d-block w-100" src="pics/our-work/img-6.jpg" alt="" />
+
+              <div class="card">
+                <section class="content text-center">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+            <div class="someWorkk">
+              <img class="d-block w-100" src="pics/our-work/img-7.jpg" alt="" />
+              <div class="cardd">
+                <section class="content">
+                  <i class="fas fa-image"></i>
+                  <h5>creatively designed</h5>
+                  <p>Lorem ipsum dolor sit</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="otherPeople py-5 mb-5">
+      <div>
+        <div
+          id="carouselExample"
+          class="carousel slide carousel-fade container px-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active d-flex gap-4 ms-5 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/happy-client/img-1.jpg"
+                  class="d-block w-100 rounded-circle"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  quasi, eius quod nisi nobis tempora vitae dolorem assumenda
+                  temporibus hic quae, ipsa harum iste voluptatibus mollitia
+                  dolores placeat ab rem? Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="nameP ms-5">Someone Name</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/happy-client/img-2.jpg"
+                  class="d-block w-100 rounded-circle"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  quasi, eius quod nisi nobis tempora vitae dolorem assumenda
+                  temporibus hic quae, ipsa harum iste voluptatibus mollitia
+                  dolores placeat ab rem? Lorem ipsum dolor ipsa harum iste
+                  voluptatibus mollitia.
+                </p>
+                <p class="nameP ms-5">Jack Dohn</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/happy-client/img-3.jpg"
+                  class="d-block w-100 rounded-circle"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  quasi, eius quod nisi nobis tempora vitae dolorem assumenda
+                  temporibus hic quae, ipsa harum iste voluptatibus mollitia
+                  dolores placeat ab rem? Lorem ipsum dolor sit amet Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <p class="nameP ms-5">Emilly Joe</p>
+              </div>
+            </div>
+            <div class="carousel-item d-flex gap-4 px-5">
+              <div class="w-50">
+                <img
+                  src="pics/happy-client/img-4.jpg"
+                  class="d-block w-100 rounded-circle"
+                  alt="..."
+                />
+              </div>
+              <div>
+                <p class="analysisPeople">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  quasi, eius quod nisi nobis tempora vitae dolorem assumenda
+                  temporibus hic quae, ipsa harum iste voluptatibus mollitia
+                  dolores placeat ab rem? Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="nameP ms-5">John Joe</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="happyClients pt-5">
+      <div class="container">
+        <div class="serviceSection container text-center mb-5">
+          <p class="serviceP fs-5">What we do</p>
+          <h3>some of our work</h3>
+        </div>
+
+        <div class="d-flex gap-3 my-5 pt-4 justify-content-between mx-5">
+          <div>
+            <div class="happyClientt mb-3 gap-4 d-flex justify-content-between">
+              <div class="w-25">
+                <img
+                  class="w-100 rounded-circle"
+                  src="pics/happy-client/img-1.jpg"
+                />
+              </div>
+
+              <div class="someWorkSection container mb-5">
+                <div class="someWorkCountainer">
+                  <h3 class="someWorkH3 mb-1 fs-5">Matthew Dix</h3>
+                  <p class="fs-6 name">Graphic Design</p>
+                  <div>
+                    <p class="someWorkParagraph mb-5 mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="happyClientt mb-3 gap-4 d-flex justify-content-between">
+              <div class="w-25">
+                <img
+                  class="w-100 rounded-circle"
+                  src="pics/happy-client/img-1.jpg"
+                />
+              </div>
+
+              <div class="someWorkSection container mb-5">
+                <div class="someWorkCountainer">
+                  <h3 class="someWorkH3 mb-1 fs-5">Matthew Dix</h3>
+                  <p class="fs-6 name">Graphic Design</p>
+                  <div>
+                    <p class="someWorkParagraph mb-5 mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="happyClientt mb-3 gap-4 d-flex justify-content-between">
+              <div class="w-25">
+                <img
+                  class="w-100 rounded-circle"
+                  src="pics/happy-client/img-1.jpg"
+                />
+              </div>
+
+              <div class="someWorkSection container mb-5">
+                <div class="someWorkCountainer">
+                  <h3 class="someWorkH3 mb-1 fs-5">Matthew Dix</h3>
+                  <p class="fs-6 name">Graphic Design</p>
+                  <div>
+                    <p class="someWorkParagraph mb-5 mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="happyClientt mb-3 gap-4 d-flex justify-content-between">
+              <div class="w-25">
+                <img
+                  class="w-100 rounded-circle"
+                  src="pics/happy-client/img-1.jpg"
+                />
+              </div>
+
+              <div class="someWorkSection container mb-5">
+                <div class="someWorkCountainer">
+                  <h3 class="someWorkH3 mb-1 fs-5">Matthew Dix</h3>
+                  <p class="fs-6 name">Graphic Design</p>
+                  <div>
+                    <p class="someWorkParagraph mb-5 mt-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="container">
+        <div class="serviceSection container text-center mb-5">
+          <p class="serviceP fs-5">Our stories</p>
+          <h3>Latest blog</h3>
+        </div>
+
+        <div class="d-flex viewMsg justify-content-between row gap-4 mx-5">
+          <div class="col position-relative">
+            <div class="w-100">
+              <img class="w-100 mb-2" src="pics/our-blog/img-1.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div>
+              <i class="fas fa-eye"></i>
+              <span>1280</span>
+              <i class="fas fa-comment-dots"></i>
+              <span> 30</span>
+            </div>
+            <div class="position-absolute absoluteSpan">
+              <span>14</span> Jan
+            </div>
+          </div>
+
+          <div class="col position-relative">
+            <div class="w-100">
+              <img class="w-100 mb-2" src="pics/our-blog/img-2.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div>
+              <i class="fas fa-eye"></i>
+              <span>1280</span>
+              <i class="fas fa-comment-dots"></i>
+              <span> 30</span>
+            </div>
+            <div class="position-absolute absoluteSpan">
+              <span>17</span> Jan
+            </div>
+          </div>
+
+          <div class="col position-relative">
+            <div class="w-100">
+              <img class="w-100 mb-2" src="pics/our-blog/img-3.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div>
+              <i class="fas fa-eye"></i>
+              <span>1280</span>
+              <i class="fas fa-comment-dots"></i>
+              <span> 30</span>
+            </div>
+            <div class="position-absolute absoluteSpan">
+              <span>16</span> Jan
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mapSection py-4">
+      <div class="text-center">
+        <i class="fas fa-map-marker-alt fs-3"></i>
+        <div class="serviceSection container text-center mb-5">
+          <h3>Open map</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light pt-5 pb-5">
+      <div class="container">
+        <div class="row d-flex gap-5">
+          <div class="followIcons col w-75">
+            <h2 class="fs-2 fw-bold mb-4">MoGo</h2>
+            <p class="fs-6 mb-5 megoP">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              voluptatem repellat libero error tenetur doloremque fuga.
+              Voluptatibus repudiandae eveniet et pariatur. Corrupti quasi dolor
+              voluptates nemo. Quasi fugit optio recusandae Quasi fugit optio
+              recusandae?
+            </p>
+            <p><span class="fw-bold"> 15k</span> Follwers</p>
+            <hr />
+            <p>
+              <span class="me-1 followUs"> Follow Us :</span>
+
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fas fa-basketball-ball"></i>
+              <i class="fab fa-tumblr"></i>
+            </p>
+            <div class="gap-0">
+              <input
+                class="pe-3 py-1"
+                type="email"
+                placeholder="Your Email..."
+              />
+              <button class="border-0 text-white px-3 py-1">SUBSCRIBE</button>
+            </div>
+          </div>
+
+          <div class="w-75 col">
+            <h4 class="mb-5 fs-5">BLOGS</h4>
+            <div>
+              <div class="d-flex gap-4">
+                <img class="mb-3" src="pics/our-blog/img-4.jpg" />
+                <div>
+                  <h5 class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, ipsa?
+                  </h5>
+                  <p class="date">Jan 9,2016</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-4 blogPics">
+                <img class="mb-3" src="pics/our-blog/img-5.jpg" />
+                <div>
+                  <h5 class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, ipsa?
+                  </h5>
+                  <p class="date">Jan 9,2016</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-4">
+                <img class="mb-3" src="pics/our-blog/img-6.jpg" />
+                <div>
+                  <h5 class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam, ipsa?
+                  </h5>
+                  <p class="date">Jan 9,2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-75 col">
+            <h4 class="mb-5 fs-5">INSTAGRAM</h4>
+            <div class="mb-4 instargram">
+              <img src="pics/instagram/img-1.jpg" alt="" />
+              <img src="pics/instagram/img-2.jpg" alt="" />
+              <img src="pics/instagram/img-3.jpg" alt="" />
+              <img src="pics/instagram/img-4.jpg" alt="" />
+              <img src="pics/instagram/img-5.jpg" alt="" />
+              <img src="pics/instagram/img-6.jpg" alt="" />
+              <img src="pics/instagram/img-8.jpg" alt="" />
+              <img src="pics/instagram/img-7.jpg" alt="" />
+              <img src="pics/instagram/img-9.jpg" alt="" />
+            </div>
+            <p class="viewMore">View more photos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="border-top bg-light pt-2 text-center pb-3 border-dark border-opacity-10"
+    >
+      <div class="container">
+        © 2016 MoGo free PSD template by<span> Laaqiq </span>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
